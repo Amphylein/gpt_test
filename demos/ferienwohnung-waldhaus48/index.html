@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="WALDHAUS 48° — fiktive Ferienwohnungs-Demo für den Nordschwarzwald.">
+  <title>WALDHAUS 48° — Apartments im Nordschwarzwald</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="demo-ribbon">Demo-Konzept · keine reale Unterkunft</div>
+
+  <header class="site-header" data-header>
+    <a class="wordmark" href="#top" aria-label="WALDHAUS 48° Startseite">
+      <span>WALDHAUS</span><strong>48°</strong>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" data-nav-toggle>
+      <span>Menü</span>
+      <i aria-hidden="true"></i>
+    </button>
+
+    <nav class="main-nav" id="main-nav" data-nav>
+      <a href="#apartments">Apartments</a>
+      <a href="#ort">Der Ort</a>
+      <a href="#erleben">Erleben</a>
+      <a href="#wissen">Gut zu wissen</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <a class="header-cta" href="#verfuegbarkeit">Verfügbarkeit prüfen</a>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <p class="meta-line">48° N · NORDSCHWARZWALD</p>
+        <h1>Drei Apartments.<br>Ein Haus am Rand<br>des Waldes.</h1>
+        <p class="hero-lead">Kein Resort, kein Programm. Ein ruhiger Ausgangspunkt für Tage zwischen Tannen, Wasser und kleinen Orten.</p>
+        <a class="text-link" href="#apartments">Die drei Apartments <span aria-hidden="true">↘</span></a>
+      </div>
+
+      <figure class="hero-media reveal">
+        <img src="public/assets/images/01-hero-black-forest.jpg" alt="Wald und Haus an einem ruhigen See im Schwarzwald" loading="eager">
+        <figcaption>
+          <span>Nordschwarzwald</span>
+          <span>Demo-Fotografie · Pexels</span>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="availability-wrap" id="verfuegbarkeit" aria-labelledby="availability-title">
+      <div class="availability-intro">
+        <p class="kicker">Direkt anfragen</p>
+        <h2 id="availability-title">Wann möchtet ihr hier sein?</h2>
+      </div>
+
+      <form class="availability-form" data-availability-form>
+        <label>
+          <span>Anreise</span>
+          <input type="date" name="arrival" required>
+        </label>
+        <label>
+          <span>Abreise</span>
+          <input type="date" name="departure" required>
+        </label>
+        <label>
+          <span>Gäste</span>
+          <select name="guests">
+            <option value="2">2 Gäste</option>
+            <option value="3">3 Gäste</option>
+            <option value="4">4 Gäste</option>
+          </select>
+        </label>
+        <button type="submit">Verfügbarkeit prüfen</button>
+      </form>
+
+      <div class="availability-result" data-availability-result hidden></div>
+    </section>
+
+    <section class="fact-ledger section-shell" aria-label="Wichtige Informationen">
+      <div class="fact reveal"><span>03</span><p>Apartments</p></div>
+      <div class="fact reveal"><span>02–04</span><p>Gäste je Einheit</p></div>
+      <div class="fact reveal"><span>41–74</span><p>Quadratmeter</p></div>
+      <div class="fact reveal"><span>610–930 M</span><p>Wald & Höhen</p></div>
+    </section>
+
+    <section class="place-story section-shell" id="ort">
+      <div class="story-label reveal">
+        <p class="kicker">Der Ort</p>
+        <span>48° N<br>Nordschwarzwald</span>
+      </div>
+      <div class="story-copy reveal">
+        <h2>Hier ist der Wald nicht Kulisse.</h2>
+        <p class="story-big">Er beginnt dort, wo der asphaltierte Weg aufhört. Morgens hängt Nebel zwischen den Bäumen, am Nachmittag wird es stiller als erwartet.</p>
+        <p>WALDHAUS 48° ist als Demo bewusst regional gedacht. In einer echten Kundenversion stehen hier keine allgemeinen Schwarzwald-Floskeln, sondern die tatsächliche Lage, konkrete Wege, Bäcker, Seen, Loipen und Orte, die Gäste wirklich erreichen können.</p>
+      </div>
+    </section>
+
+    <section class="apartments section-shell" id="apartments" aria-labelledby="apartments-title">
+      <div class="section-heading reveal">
+        <p class="kicker">Bleiben</p>
+        <h2 id="apartments-title">Drei Räume für drei Arten von Aufenthalt.</h2>
+        <p>Keine künstliche Zimmerkategorie. Jedes Apartment bekommt einen klaren Grund, warum man genau dieses wählt.</p>
+      </div>
+      <div class="apartment-list" data-apartments></div>
+    </section>
+
+    <section class="atmosphere section-shell" aria-label="Atmosphäre">
+      <figure class="atmosphere-large reveal">
+        <img src="public/assets/images/05-bedroom-window.jpg" alt="Ruhiges Schlafzimmer mit großem Fenster zum Wald" loading="lazy">
+      </figure>
+      <div class="atmosphere-note reveal">
+        <p class="meta-line">ZWISCHEN DRINNEN & DRAUSSEN</p>
+        <blockquote>„Nicht mehr zeigen als nötig. Aber das Richtige.“</blockquote>
+        <p>Für Ferienwohnungen entscheidet Fotografie stärker als fast jede UI-Komponente. Deshalb bekommt sie hier Raum statt zehn kleiner Ausstattungs-Karten.</p>
+      </div>
+      <figure class="atmosphere-small reveal">
+        <img src="public/assets/images/06-forest-stream.jpg" alt="Bach im grünen Schwarzwald" loading="lazy">
+        <figcaption>Wasser, Wald, Wege · Baden-Württemberg</figcaption>
+      </figure>
+    </section>
+
+    <section class="day-section" id="erleben">
+      <div class="section-shell day-layout">
+        <div class="day-intro reveal">
+          <p class="kicker">Ein Tag hier</p>
+          <h2>Kein Pflichtprogramm.</h2>
+          <p>Ein guter Unterkunftsauftritt verkauft nicht nur Betten, sondern die tatsächliche Nutzung des Ortes. In der Kundenversion werden daraus echte Empfehlungen.</p>
+        </div>
+        <div class="day-timeline" data-guide></div>
+      </div>
+
+      <div class="region-spread section-shell">
+        <figure class="region-main reveal">
+          <img src="public/assets/images/07-forest-trail.jpg" alt="Waldweg im Schwarzwald" loading="lazy">
+          <figcaption>Gutach · Schwarzwald</figcaption>
+        </figure>
+        <figure class="region-side reveal">
+          <img src="public/assets/images/08-mummelsee.jpg" alt="Mummelsee und bewaldete Höhen im Schwarzwald" loading="lazy">
+          <figcaption>Mummelsee · Baden-Württemberg</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="booking-trust section-shell" id="wissen">
+      <div class="trust-copy reveal">
+        <p class="kicker">Direkt buchen</p>
+        <h2>Die schöne Seite reicht nicht. Die Buchung muss Vertrauen schaffen.</h2>
+        <p>Eine echte Version würde hier den vorhandenen Buchungsanbieter, Stornierungsbedingungen, Zahlungsweg und Ansprechpartner transparent nennen. Keine Countdown-Timer. Keine erfundenen „nur noch 1 verfügbar“-Hinweise.</p>
+      </div>
+      <div class="trust-ledger reveal">
+        <div><span>01</span><strong>Verfügbarkeit</strong><p>Live über PMS oder Buchungsanbieter.</p></div>
+        <div><span>02</span><strong>Zahlung</strong><p>Provider und Zahlungsart klar vor Abschluss.</p></div>
+        <div><span>03</span><strong>Storno</strong><p>Konditionen sichtbar, bevor Gäste buchen.</p></div>
+        <div><span>04</span><strong>Kontakt</strong><p>Ein echter Mensch bleibt erreichbar.</p></div>
+      </div>
+    </section>
+
+    <section class="season section-shell">
+      <figure class="season-media reveal">
+        <img src="public/assets/images/09-winter-forest.jpg" alt="Verschneiter Wald und See in Baden-Württemberg" loading="lazy">
+      </figure>
+      <div class="season-copy reveal">
+        <p class="meta-line">NOVEMBER → MÄRZ</p>
+        <h2>Der Schwarzwald endet nicht im Oktober.</h2>
+        <p>Eine saisonale Bildstrecke zeigt, dass der Aufenthalt auch außerhalb des Sommers einen eigenen Charakter hat — ohne dafür eine zweite Website zu bauen.</p>
+      </div>
+    </section>
+
+    <section class="arrival section-shell">
+      <div class="arrival-heading reveal">
+        <p class="kicker">Ankommen</p>
+        <h2>Die letzten zehn Minuten sollten genauso klar sein wie die ersten zehn Sekunden der Website.</h2>
+      </div>
+      <div class="arrival-grid reveal">
+        <div>
+          <span>Auto</span>
+          <p>In der echten Seite: konkrete Route, Parkplatzsituation und Winterhinweise.</p>
+        </div>
+        <div>
+          <span>Bahn</span>
+          <p>In der echten Seite: nächster Bahnhof, Busverbindung und Abholung, falls angeboten.</p>
+        </div>
+        <div>
+          <span>Check-in</span>
+          <p>Persönliche Übergabe oder Self-Check-in — eindeutig und ohne Überraschungen erklären.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq section-shell" aria-labelledby="faq-title">
+      <div class="faq-head reveal">
+        <p class="kicker">Gut zu wissen</p>
+        <h2 id="faq-title">Fragen, die vor der Buchung wirklich auftauchen.</h2>
+      </div>
+      <div class="faq-list" data-faq></div>
+    </section>
+
+    <section class="final-booking" id="kontakt">
+      <div class="final-image" aria-hidden="true">
+        <img src="public/assets/images/01-hero-black-forest.jpg" alt="" loading="lazy">
+      </div>
+      <div class="final-overlay"></div>
+      <div class="final-content reveal">
+        <p class="meta-line">WALDHAUS 48° · DEMO</p>
+        <h2>Erst die Daten.<br>Dann die Vorfreude.</h2>
+        <p>In einer echten Version führt dieser Schritt direkt in die Live-Verfügbarkeit — mit echten Preisen, echten Regeln und echten Bildern der Unterkunft.</p>
+        <a class="button-light" href="#verfuegbarkeit">Verfügbarkeit prüfen</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <span>WALDHAUS</span><strong>48°</strong>
+      <p>Fiktive Hospitality-Demo · Nordschwarzwald</p>
+    </div>
+    <div class="footer-links">
+      <a href="#apartments">Apartments</a>
+      <a href="#erleben">Erleben</a>
+      <a href="#wissen">Gut zu wissen</a>
+      <a href="public/assets/ASSETS.md">Bildquellen</a>
+    </div>
+    <div class="footer-note">
+      <p>Keine reale Unterkunft. Keine Live-Buchung. Keine erfundenen Bewertungen.</p>
+      <span>© Demo 2026</span>
+    </div>
+  </footer>
+
+  <script src="site-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
