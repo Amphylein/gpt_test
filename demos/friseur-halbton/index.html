@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="HALBTON – fiktives Hair & Colour Studio Demo für Freudenstadt." />
+  <title>HALBTON — Hair & Colour Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,300..800&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt</a>
+
+  <header class="site-header" data-header>
+    <a class="wordmark" href="#top" aria-label="HALBTON Startseite">
+      <span>HALBTON</span>
+      <small>Hair & Colour · FDS</small>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" data-menu-toggle>
+      <span>Menü</span>
+      <span class="menu-line" aria-hidden="true"></span>
+    </button>
+
+    <nav class="main-nav" id="main-nav" data-nav>
+      <a href="#services">Services</a>
+      <a href="#preise">Preise</a>
+      <a href="#team">Team</a>
+      <a href="#studio">Studio</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <button class="book-link book-link--header" type="button" data-open-booking>Termin buchen</button>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Hair & Colour Studio · Freudenstadt</p>
+        <h1>
+          <span>Schnitt.</span>
+          <span>Farbe.</span>
+          <em>ohne Filter.</em>
+        </h1>
+        <p class="hero-intro">Schnitte, die auch nach sechs Wochen noch funktionieren. Farbe, die zu Ausgangsbasis, Kontrast und Alltag passt.</p>
+        <button class="book-link" type="button" data-open-booking>Termin buchen <span aria-hidden="true">↗</span></button>
+      </div>
+
+      <figure class="hero-visual reveal reveal-delay">
+        <div class="crop-frame crop-frame--hero">
+          <img src="public/assets/images/01-hero.jpg" alt="Haare werden in einem Salon professionell bearbeitet" />
+        </div>
+        <figcaption><span>EDITORIAL / PROCESS</span><span>01 — COLOR</span></figcaption>
+      </figure>
+    </section>
+
+    <section class="statement section-pad reveal" aria-labelledby="statement-title">
+      <div class="statement-index">A / 01</div>
+      <div>
+        <p class="eyebrow">Unser Ansatz</p>
+        <h2 id="statement-title">Farbe beginnt nicht beim Wunschton.</h2>
+        <p class="statement-serif">Sondern bei <em>Ausgangsbasis, Kontrast</em> und dem Leben dazwischen.</p>
+      </div>
+      <p class="statement-copy">Wir beraten nicht nach Trendkarte. Bei Farbe schauen wir zuerst auf Haarzustand, Hautton, vorhandene Pigmente und darauf, wie viel Pflege im Alltag realistisch ist. Bei Schnitten zählen Fall, Textur und die Wochen nach dem Termin genauso wie der erste Blick in den Spiegel.</p>
+    </section>
+
+    <section class="services section-pad" id="services" aria-labelledby="services-title">
+      <div class="section-head reveal">
+        <p class="eyebrow">Leistungen</p>
+        <h2 id="services-title">Vier Bereiche.<br>Kein Menü mit 48 Positionen.</h2>
+      </div>
+
+      <div class="service-layout">
+        <div class="service-list" data-service-list>
+          <button class="service-row is-active" type="button" data-service-image="public/assets/images/03-cut.jpg" data-service-caption="Schnitt / Struktur" aria-pressed="true">
+            <span class="service-num">01</span>
+            <span class="service-name">Schnitt & Styling</span>
+            <span class="service-desc">Form, Fall und Alltag zuerst.</span>
+            <span class="service-price">ab 54 €</span>
+          </button>
+          <button class="service-row" type="button" data-service-image="public/assets/images/02-colour.jpg" data-service-caption="Farbe / Balayage" aria-pressed="false">
+            <span class="service-num">02</span>
+            <span class="service-name">Farbe & Balayage</span>
+            <span class="service-desc">Ton, Kontrast und Pflege im Zusammenhang.</span>
+            <span class="service-price">ab 96 €</span>
+          </button>
+          <button class="service-row" type="button" data-service-image="public/assets/images/05-wash.jpg" data-service-caption="Pflege / Gloss" aria-pressed="false">
+            <span class="service-num">03</span>
+            <span class="service-name">Pflege & Gloss</span>
+            <span class="service-desc">Glanz, Struktur und Pigmentausgleich.</span>
+            <span class="service-price">ab 29 €</span>
+          </button>
+          <button class="service-row" type="button" data-service-image="public/assets/images/06-finish.jpg" data-service-caption="Finish / Styling" aria-pressed="false">
+            <span class="service-num">04</span>
+            <span class="service-name">Styling & Brows</span>
+            <span class="service-desc">Wenn das Finish genauer sitzen soll.</span>
+            <span class="service-price">ab 24 €</span>
+          </button>
+        </div>
+
+        <figure class="service-image reveal">
+          <div class="crop-frame crop-frame--service">
+            <img src="public/assets/images/03-cut.jpg" alt="Friseurin schneidet Haare präzise" data-service-preview />
+          </div>
+          <figcaption data-service-caption>Schnitt / Struktur</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="image-break reveal" aria-label="Salonarbeit in Nahaufnahme">
+      <img src="public/assets/images/04-process.jpg" alt="Nahaufnahme beim präzisen Haarschnitt" />
+      <div class="image-break-copy">
+        <span class="eyebrow">Nicht nur vorher / nachher</span>
+        <p>Die Qualität steckt oft in den zwanzig Minuten, die auf keinem Instagram-Bild zu sehen sind.</p>
+      </div>
+    </section>
+
+    <section class="colour-lab section-pad" aria-labelledby="colour-title">
+      <div class="colour-intro reveal">
+        <p class="eyebrow">Color Lab</p>
+        <h2 id="colour-title">Blond ist kein Farbname.</h2>
+        <p>Zwischen kühl, weich, beige, klar oder kontrastreich liegen oft mehrere technische Wege. Deshalb starten größere Farbveränderungen mit einer kurzen Analyse – bevor Folie, Farbe oder Aufheller überhaupt geöffnet werden.</p>
+      </div>
+
+      <div class="consult-grid reveal">
+        <div class="consult-step">
+          <span>01</span>
+          <h3>Ausgangsbasis</h3>
+          <p>Vorhandene Farbe, Naturton, Porosität und Haarhistorie.</p>
+        </div>
+        <div class="consult-step">
+          <span>02</span>
+          <h3>Kontrast</h3>
+          <p>Was passt zu Hautton, Augen, Schnitt und gewünschter Wirkung?</p>
+        </div>
+        <div class="consult-step">
+          <span>03</span>
+          <h3>Pflegeaufwand</h3>
+          <p>Wie oft willst du auffrischen – und wie viel Routine passt wirklich in deinen Alltag?</p>
+        </div>
+        <div class="consult-step consult-step--accent">
+          <span>04</span>
+          <h3>Plan statt Überraschung</h3>
+          <p>Bei komplexen Veränderungen definieren wir Etappen, Preisrahmen und Pflege vor dem Start.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="team section-pad" id="team" aria-labelledby="team-title">
+      <div class="section-head reveal">
+        <p class="eyebrow">Team</p>
+        <h2 id="team-title">Du buchst nicht „irgendwen“.</h2>
+        <p class="section-note">In dieser Demo bewusst ohne Stock-Porträts. In einer Kundenversion stehen hier echte Bilder, Spezialgebiete und direkte Buchungslinks.</p>
+      </div>
+
+      <div class="team-index reveal">
+        <article>
+          <span class="team-no">01</span>
+          <h3>Mara</h3>
+          <p class="team-role">Colour / Balayage</p>
+          <p>weiche Übergänge · Blondkorrekturen · Gloss</p>
+        </article>
+        <article>
+          <span class="team-no">02</span>
+          <h3>Noah</h3>
+          <p class="team-role">Cut / Texture</p>
+          <p>Kurzhaar · Bewegung · natürliche Falllinien</p>
+        </article>
+        <article>
+          <span class="team-no">03</span>
+          <h3>Leonie</h3>
+          <p class="team-role">Styling / Brows</p>
+          <p>Finish · Event Styling · Brow Shape</p>
+        </article>
+      </div>
+      <p class="demo-disclaimer">Demo-Namen, keine realen Mitarbeiterprofile.</p>
+    </section>
+
+    <section class="prices section-pad" id="preise" aria-labelledby="prices-title">
+      <div class="prices-lead reveal">
+        <p class="eyebrow">Preisindex</p>
+        <h2 id="prices-title">Du sollst ungefähr wissen, woran du bist.</h2>
+        <p>Variable Farbservices hängen von Länge, Ausgangsbasis, Material und Zeit ab. Darum zeigen wir Startpreise – nicht künstlich niedrige Lockpreise.</p>
+      </div>
+
+      <div class="price-table reveal">
+        <div><span>Waschen · Schneiden · Styling</span><strong>ab 54 €</strong></div>
+        <div><span>Maschinenschnitt / Kontur</span><strong>ab 32 €</strong></div>
+        <div><span>Ansatzfarbe</span><strong>ab 68 €</strong></div>
+        <div><span>Gloss / Toner</span><strong>ab 42 €</strong></div>
+        <div><span>Balayage / Foilwork</span><strong>ab 145 €</strong></div>
+        <div><span>Intensivpflege</span><strong>ab 29 €</strong></div>
+        <div><span>Event Styling</span><strong>ab 59 €</strong></div>
+        <div><span>Brow Shape</span><strong>ab 24 €</strong></div>
+      </div>
+    </section>
+
+    <section class="studio" id="studio" aria-labelledby="studio-title">
+      <figure class="studio-image reveal">
+        <img src="public/assets/images/07-studio.jpg" alt="Heller moderner Friseursalon mit Spiegeln und Sitzplätzen" />
+        <figcaption>SPACE / LIGHT / WORK</figcaption>
+      </figure>
+      <div class="studio-copy section-pad reveal">
+        <p class="eyebrow">Studio</p>
+        <h2 id="studio-title">Hell genug für Farbe. Ruhig genug für Beratung.</h2>
+        <p>Keine Beauty-Lounge, kein Gold auf Schwarz. Das Studio ist als Arbeitsraum gedacht: gutes Licht, klare Plätze, genug Zeit zwischen Beratung, Farbe und Finish.</p>
+        <div class="studio-meta">
+          <span>Freudenstadt</span>
+          <span>Nordschwarzwald</span>
+          <span>Single Location</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section-pad" id="kontakt" aria-labelledby="contact-title">
+      <div class="contact-title reveal">
+        <p class="eyebrow">Kontakt & Zeiten</p>
+        <h2 id="contact-title">Passt der Termin.<br>Passt der Rest.</h2>
+        <button class="book-link book-link--large" type="button" data-open-booking>Termin buchen <span aria-hidden="true">↗</span></button>
+      </div>
+
+      <div class="hours reveal">
+        <div><span>Montag</span><span>geschlossen</span></div>
+        <div><span>Dienstag</span><span>09:00 – 18:00</span></div>
+        <div><span>Mittwoch</span><span>09:00 – 18:00</span></div>
+        <div><span>Donnerstag</span><span>10:00 – 20:00</span></div>
+        <div><span>Freitag</span><span>09:00 – 18:00</span></div>
+        <div><span>Samstag</span><span>09:00 – 14:00</span></div>
+        <div><span>Sonntag</span><span>geschlossen</span></div>
+      </div>
+
+      <div class="contact-meta reveal">
+        <p><span>Region</span>Freudenstadt / Nordschwarzwald</p>
+        <p><span>Telefon</span>+49 000 000000</p>
+        <p><span>E-Mail</span>hello@halbton-demo.de</p>
+        <p class="small">Demo-Kontaktdaten. Keine reale Terminannahme.</p>
+      </div>
+    </section>
+
+    <section class="closing-image reveal">
+      <img src="public/assets/images/08-tools.jpg" alt="Friseurwerkzeug und Stylingprodukte im Salon" />
+      <div class="closing-copy">
+        <p class="eyebrow">HALBTON / FDS</p>
+        <h2>Ein guter Termin beginnt mit einer klaren Erwartung.</h2>
+        <button class="book-link book-link--inverse" type="button" data-open-booking>Termin buchen</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wordmark wordmark--footer"><span>HALBTON</span><small>Hair & Colour Studio</small></div>
+    <p>Demo-Website · Marke, Personen, Preise und Inhalte sind fiktiv.</p>
+    <div>
+      <a href="#top">Nach oben</a>
+      <a href="#">Impressum</a>
+      <a href="#">Datenschutz</a>
+    </div>
+  </footer>
+
+  <dialog class="booking-dialog" data-booking-dialog aria-labelledby="booking-title">
+    <button class="dialog-close" type="button" aria-label="Dialog schließen" data-close-booking>×</button>
+    <p class="eyebrow">Demo Booking</p>
+    <h2 id="booking-title">Welcher Termin soll es werden?</h2>
+    <p>Diese Demo simuliert nur den Übergang. In einer Kundenversion wird hier das vorhandene Buchungssystem angebunden.</p>
+    <form class="booking-form" data-booking-form>
+      <label>
+        Service
+        <select name="service">
+          <option>Schnitt & Styling</option>
+          <option>Farbe & Balayage</option>
+          <option>Pflege & Gloss</option>
+          <option>Styling & Brows</option>
+          <option>Beratung Farbe</option>
+        </select>
+      </label>
+      <label>
+        Name
+        <input type="text" name="name" autocomplete="name" placeholder="Vorname Nachname" />
+      </label>
+      <label>
+        Kontakt
+        <input type="email" name="email" autocomplete="email" placeholder="name@beispiel.de" />
+      </label>
+      <button class="book-link" type="submit">Demo-Anfrage senden</button>
+      <p class="form-status" data-form-status aria-live="polite"></p>
+    </form>
+  </dialog>
+
+  <script src="site-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
