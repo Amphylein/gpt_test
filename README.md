@@ -47,7 +47,7 @@ Implemented:
 - no fake reviews, statistics, awards or staff identities
 - client-swap and ChatGPT/Codex modification instructions
 
-User visual review: **passed** — perceived as high-quality rather than typical AI output.
+User visual review: **passed strongly** — perceived as high-quality rather than typical AI output.
 
 ### Ferienwohnung — WALDHAUS 48°
 
@@ -70,7 +70,32 @@ Implemented:
 - responsive mobile layout and reduced-motion handling
 - explicit integration seam for a future PMS / booking provider
 
-Next quality gate: visual browser/device review before any major feature expansion.
+User visual review: **acceptable but not showcase level** — “ganz okay”, not a wow result. Keep it as a useful baseline, but revisit later rather than treating its art direction as a gold-standard pattern.
+
+### Friseur / Beauty — HALBTON
+
+Path: `demos/friseur-halbton/`
+
+Fictional single-location Hair & Colour Studio for Freudenstadt / Nordschwarzwald.
+
+Implemented:
+
+- third independent design language: sharp fashion/editorial rather than craft or hospitality
+- asymmetric hero with one strong booking action
+- graphic service/price index instead of cards
+- colour-consultation positioning built around Ausgangsbasis, Kontrast and Alltag
+- team architecture that deliberately avoids fake stock staff portraits
+- visible demo price index
+- modern salon/interior section
+- booking modal with a clean future integration seam
+- central editable demo data
+- coherent licensed Pexels process imagery
+- exact image/license manifest
+- Windows + Linux asset download scripts
+- responsive mobile layout and reduced-motion behavior
+- maintenance prompt with mandatory AI-tell audit
+
+Next quality gate: user visual review + browser/device QA before deciding whether HALBTON becomes a reference-quality pattern.
 
 ## Research snapshot
 
