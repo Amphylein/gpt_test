@@ -33,11 +33,11 @@ A successful demo should be strong enough that a prospective client can realisti
 
 Path: `demos/handwerk-kante-kern/`
 
-The first concrete demo is a fictional Schreinerei / Innenausbau business for the Nordschwarzwald.
+Fictional Schreinerei / Innenausbau business for the Nordschwarzwald.
 
-Implemented so far:
+Implemented:
 
-- original art direction
+- original editorial/craft art direction
 - complete German homepage composition
 - mobile-specific responsive design
 - curated real Pexels photography set
@@ -47,7 +47,30 @@ Implemented so far:
 - no fake reviews, statistics, awards or staff identities
 - client-swap and ChatGPT/Codex modification instructions
 
-The next meaningful step is browser/device QA rather than adding more sections.
+User visual review: **passed** — perceived as high-quality rather than typical AI output.
+
+### Ferienwohnung — WALDHAUS 48°
+
+Path: `demos/ferienwohnung-waldhaus48/`
+
+Fictional three-apartment direct-booking concept in the Nordschwarzwald.
+
+Implemented:
+
+- independent hospitality art direction rather than reuse of the Handwerk composition
+- split editorial hero instead of centered hotel-template overlay
+- integrated arrival/departure/guest availability demo
+- three intentionally non-identical apartment layouts
+- editable apartment/guide/FAQ data in `site-data.js`
+- real Black Forest / Baden-Württemberg regional photography
+- exact Pexels source/license manifest
+- Windows + Linux asset download scripts
+- direct-booking trust section without fake urgency or ratings
+- seasonal and arrival storytelling
+- responsive mobile layout and reduced-motion handling
+- explicit integration seam for a future PMS / booking provider
+
+Next quality gate: visual browser/device review before any major feature expansion.
 
 ## Research snapshot
 
