@@ -21,10 +21,33 @@ A successful demo should be strong enough that a prospective client can realisti
 
 - `reference-analysis/` — current live-site research and category-specific conclusions
 - `demo-prompts/` — detailed build briefs/prompts for ChatGPT or Codex
+- `demos/` — concrete Phase-2 demo implementations
 - `docs/ANTI_AI_DESIGN_RULES.md` — hard rules against common AI/template aesthetics
 - `docs/IMAGE_LICENSING.md` — rules for legally reusable demo photography
 - `docs/RESEARCH_METHOD.md` — how references are selected and audited
 - `docs/MASTER_BUILD_PROCESS.md` — shared production process for every future demo
+
+## Phase 2 status
+
+### Handwerk — KANTE & KERN
+
+Path: `demos/handwerk-kante-kern/`
+
+The first concrete demo is a fictional Schreinerei / Innenausbau business for the Nordschwarzwald.
+
+Implemented so far:
+
+- original art direction
+- complete German homepage composition
+- mobile-specific responsive design
+- curated real Pexels photography set
+- exact source/license manifest
+- Windows + Linux image download scripts
+- restrained motion and accessible reduced-motion fallback
+- no fake reviews, statistics, awards or staff identities
+- client-swap and ChatGPT/Codex modification instructions
+
+The next meaningful step is browser/device QA rather than adding more sections.
 
 ## Research snapshot
 
